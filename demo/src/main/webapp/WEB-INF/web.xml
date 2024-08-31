@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>HelloServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/hello-world</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FirstJSP</servlet-name>
+        <jsp-file>/FirstJSP.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FirstJSP</servlet-name>
+        <url-pattern>/hello-world-jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SessionServlet</servlet-name>
+        <servlet-class>SessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionServlet</servlet-name>
+        <url-pattern>/session</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SessionTest</servlet-name>
+        <jsp-file>/SessionTest.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SessionTest</servlet-name>
+        <url-pattern>/session-jsp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SetCookies</servlet-name>
+        <servlet-class>SetCookies</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SetCookies</servlet-name>
+        <url-pattern>/set-cookies</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>GetCookies</servlet-name>
+        <servlet-class>GetCookies</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookies</servlet-name>
+        <url-pattern>/get-cookies</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteCookies</servlet-name>
+        <servlet-class>DeleteCookies</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookies</servlet-name>
+        <url-pattern>/del-cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DB_test</servlet-name>
+        <servlet-class>DB_test</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DB_test</servlet-name>
+        <url-pattern>/db</url-pattern>
+    </servlet-mapping>
+</web-app>
